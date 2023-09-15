@@ -35,6 +35,7 @@ void set_revents(int revt) { revents_ = revt; }
 ```
 #### Channel源码分析
 **Channel类对象重要成员**：
+
 ![Channel重要成员](./pic/Channel-uml.png)
 
 
@@ -43,7 +44,7 @@ void set_revents(int revt) { revents_ = revt; }
 2.  `enableWriting()`：开启写事件监听
 3. `disableReading()` ：关闭读事件监听
 4.  `disableWriting()`：关闭写事件监听
-5.  `disableAll()`：关闭写事件监听
+5.  `disableAll()`：关闭读写事件监听
 
 以读事件代码为例：
 ```c++
